@@ -1,0 +1,24 @@
+{
+"CLIENTE":
+[   {  
+    "id": "type: string",
+    "nome":"type: string",
+    "cpf":"type: number",
+    "tipoconta":"type: string",
+    "saldo": "type: string",
+    "data:": "type: number"
+    }
+]
+{    
+ 
+"BANCO":
+[
+   {
+     "codigobanco":"type: string",
+     "agencia":"type: number",
+     "conta":"type: number",
+     "digito": "type: number"
+    }
+]
+}
+
