@@ -1,0 +1,23 @@
+{
+  "name": "atividade_bancodedados",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazhenri/atividade_bancoDeDados.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lazhenri/atividade_bancoDeDados/issues"
+  },
+  "homepage": "https://github.com/lazhenri/atividade_bancoDeDados#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "mongoose": "^6.0.15"
+  }
+}
