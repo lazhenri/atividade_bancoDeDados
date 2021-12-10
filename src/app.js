@@ -1,11 +1,11 @@
-const empresa = require("express")
+const express = require("express")
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
 
 const app = express()
 
 //string de conexao
-mongoose.connect ("mongoose://localhost:27017/senac", {
+mongoose.connect("mongodb://localhost:27017/senac", {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -16,18 +16,18 @@ let db = mongoose.connection;
 // Captura de erro ou sucesso na conexao
 db.on("error", console.log.bind(console, "connection error:"))
 db.once("open", function (){
-    console.log("conexao feita com sucesso,")
+    console.log("conexao feita com sucesso.")
 })
 
 //rotas
 const index = require("./routes/index")
-const tarefas = require("./router/tarefasRoute")
+const tarefas = require("./routes/tarefasRoute")
 
 //configurar body parser
-app.use(bodyParser.json();
-//app.use(express.json()); - podemos usar a propria funcao de parse
+//app.use(bodyParser.json());
+app.use(express.json()); // podemos usar a propria funcao de parse
 
-app.use(function (req, res,next) {
+app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*")
     res.header(
         "Access-Control-Allow-Headers",

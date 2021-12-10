@@ -1,7 +1,7 @@
 
 const app = require("./src/app");
-const port = 4001;
+const port = 8080;
 
 app.listen(port, () => {
-    console.log('app está rodando na portaria ${port}');
+    console.log(`app está rodando na portaria ${port}`);
 });
